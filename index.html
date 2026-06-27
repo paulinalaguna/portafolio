@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Paulina | Diseñadora UX/UI</title>
+    <style>
+        /* Paleta de colores aplicada */
+        :root {
+            --primary: #9BC1BC;
+            --background: #E6EFEE;
+            --text-dark: #0B3948;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: bold;
+        }
+
+        .btn-cv {
+            background-color: var(--primary);
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        h1 { font-size: 3rem; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .skill-card {
+            background: var(--primary);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid var(--primary);
+        }
+
+        button {
+            background: var(--text-dark);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div><strong>Paulina.</strong></div>
+        <nav>
+            <span>Sobre mi</span> <span>Proyectos</span> <span>Proceso</span> <span>Experiencia</span> <span>Habilidades</span> <span>Contacto</span>
+            <a href="#" class="btn-cv">Descargar CV</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Diseñadora UX/UI</h1>
+        <p>Diseñadora de Producto con experiencia en diseño gráfico y un enfoque centrado en el usuario.</p>
+        <p>Transformo problemas complejos en experiencias digitales intuitivas, funcionales y visualmente atractivas, combinando investigación, estrategia y diseño para crear soluciones que generan valor para las personas y el negocio.</p>
+
+        <h2>Proyectos destacados</h2>
+
+        <h2>¿En qué puedo ayudarte?</h2>
+        <div class="skills-grid">
+            <div class="skill-card">UI Design</div>
+            <div class="skill-card">Visual Design</div>
+            <div class="skill-card">Packaging Design</div>
+            <div class="skill-card">Product Design</div>
+        </div>
+
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+            <input type="tel" placeholder="Teléfono">
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+</body>
+</html>
